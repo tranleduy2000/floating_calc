@@ -66,7 +66,6 @@ public class FloatingPageAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         View v = getViewAt(position);
         container.addView(v);
-
         return v;
     }
 

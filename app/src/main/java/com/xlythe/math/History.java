@@ -25,7 +25,7 @@ import java.util.List;
 public class History {
     private static final int VERSION_1 = 1;
     private static final int VERSION_4 = 4;
-    private static final int MAX_ENTRIES = 100;
+    private static final int MAX_ENTRIES = 10;
     private List<HistoryEntry> mEntries = new LinkedList<HistoryEntry>();
     private int mPos;
     private int mGroupId;

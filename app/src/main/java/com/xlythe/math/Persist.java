@@ -33,7 +33,7 @@ public class Persist {
     private static final int LAST_VERSION = 4;
     private static final String FILE_NAME = "calculator.data";
     private final Context mContext;
-    History mHistory = new History();
+    private History mHistory = new History();
     private int mDeleteMode;
     private Base mMode;
 

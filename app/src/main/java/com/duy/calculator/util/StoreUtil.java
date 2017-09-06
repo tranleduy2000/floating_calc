@@ -23,7 +23,8 @@ import android.content.Intent;
 import android.net.Uri;
 
 /**
- * update 1/9/2017
+ * StoreUtil.java
+ * last update 6/9/2017
  */
 public class StoreUtil {
     public static void gotoPlayStore(Context context, String APP_ID) {

@@ -25,21 +25,6 @@ import com.duy.calculator.R;
 
 public class CalculatorPadViewPager extends ViewPager {
 
-    private final PageTransformer mPageTransformer = new PageTransformer() {
-        @Override
-        public void transformPage(View view, float position) {
-            if (position < 0.0f) {
-                // Pin the left page to the left side.
-                view.setTranslationX(getWidth() * -position);
-                view.setAlpha(Math.max(1.0f + position, 0.0f));
-            } else {
-                // Use the default slide transition when moving to the next page.
-                view.setTranslationX(0.0f);
-                view.setAlpha(1.0f);
-            }
-        }
-    };
-
     public CalculatorPadViewPager(Context context) {
         this(context, null);
     }
@@ -49,7 +34,21 @@ public class CalculatorPadViewPager extends ViewPager {
 
         setBackgroundColor(getResources().getColor(android.R.color.black));
         setPageMargin(getResources().getDimensionPixelSize(R.dimen.pad_page_margin));
+        PageTransformer mPageTransformer = new PageTransformer() {
+            @Override
+            public void transformPage(View view, float position) {
+                if (position < 0.0f) {
+                    // Pin the left page to the left side.
+                    view.setTranslationX(getWidth() * -position);
+                    view.setAlpha(Math.max(1.0f + position, 0.0f));
+                } else {
+                    // Use the default slide transition when moving to the next page.
+                    view.setTranslationX(0.0f);
+                    view.setAlpha(1.0f);
+                }
+            }
+        };
         setPageTransformer(false, mPageTransformer);
-        setOffscreenPageLimit(4);
+        setOffscreenPageLimit(3);
     }
 }

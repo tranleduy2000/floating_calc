@@ -14,6 +14,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -104,6 +105,7 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
     @NonNull
     @Override
     public View inflateView(@NonNull ViewGroup parent) {
+        long startTime = System.currentTimeMillis();
         // Rebuild constants. If the user changed their locale, it won't kill the app
         // but it might change a decimal point from . to ,
         Constants.rebuildConstants();
@@ -266,7 +268,7 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
         });
 
         setState(State.DELETE);
-
+        Log.d(TAG, "inflateView() time " + (System.currentTimeMillis() - startTime));
         return child;
     }
 
@@ -278,8 +280,10 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
 
         if (mDisplay != null) {
             for (int i = 0; i < mDisplay.getChildCount(); i++) {
-                final CalculatorEditText displayChild = (CalculatorEditText) mDisplay.getChildAt(i);
-                displayChild.setSelection(displayChild.length());
+                if (mDisplay.getChildAt(i) instanceof CalculatorEditText) {
+                    final CalculatorEditText displayChild = (CalculatorEditText) mDisplay.getChildAt(i);
+                    displayChild.setSelection(displayChild.length());
+                }
             }
         }
         setAccentColor();

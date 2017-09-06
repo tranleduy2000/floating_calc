@@ -62,28 +62,35 @@
             android:layout_height="wrap_content"
             android:weightSum="3">
 
-            <ImageView
+            <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/img_rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/rate_app"
+                android:foreground="?selectableItemBackground"
+                android:padding="4dp"
                 android:src="@drawable/ic_rate_review_black_24dp" />
 
-            <ImageView
+            <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/img_share"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+
                 android:contentDescription="@string/share_app"
+                android:foreground="?selectableItemBackground"
+                android:padding="4dp"
                 android:src="@drawable/ic_share_black_24dp" />
 
-            <ImageView
+            <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/img_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:contentDescription="@string/more_app"
+                android:foreground="?selectableItemBackground"
+                android:padding="4dp"
                 android:src="@drawable/ic_apps_black_24dp" />
         </LinearLayout>
 
