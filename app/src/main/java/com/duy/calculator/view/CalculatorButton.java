@@ -26,6 +26,6 @@ public class CalculatorButton extends android.support.v7.widget.AppCompatButton 
     }
 
     private void setup(Context context) {
-        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf"));
+        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/RobotoMono-Light.ttf"));
     }
 }
