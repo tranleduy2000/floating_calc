@@ -8,12 +8,13 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.Switch;
+import android.widget.SeekBar;
 
 import com.duy.calculator.CalculatorSettings;
 import com.duy.calculator.R;
@@ -130,7 +131,8 @@ public class FloatingPageAdapter extends PagerAdapter {
         RecyclerView recyclerView = v.findViewById(R.id.recycle_view_color);
         recyclerView.setLayoutManager(new GridLayoutManager(mContext, 3));
         recyclerView.setAdapter(new ColorAdapter(mContext));
-        Switch mRadian = v.findViewById(R.id.sw_radian);
+
+        SwitchCompat mRadian = v.findViewById(R.id.sw_radian);
         mRadian.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -138,6 +140,24 @@ public class FloatingPageAdapter extends PagerAdapter {
             }
         });
         mRadian.setChecked(CalculatorSettings.useRadians(mContext));
+
+        SeekBar opacity = v.findViewById(R.id.seek_opacity);
+        opacity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                CalculatorSettings.setOpacity(mContext, i + 10);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     private void applyListener(View view) {

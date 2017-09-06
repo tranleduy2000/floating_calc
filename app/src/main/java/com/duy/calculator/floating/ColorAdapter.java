@@ -11,12 +11,13 @@ import android.view.ViewGroup;
 
 import com.duy.calculator.R;
 
+import static com.duy.calculator.CalculatorSettings.PREF_KEY_COLOR_ACCENT;
+
 /**
  * Created by Duy on 9/5/2017.
  */
 
 public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ViewHolder> {
-    public static final String PREF_KEY_COLOR_ACCENT = "accent_color";
     private int[] mColors;
     private LayoutInflater mInflater;
     private SharedPreferences mSharedPreferences;

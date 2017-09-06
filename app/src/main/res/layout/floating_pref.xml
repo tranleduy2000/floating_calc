@@ -5,13 +5,18 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:paddingBottom="@dimen/num_margin_vertical"
-    android:paddingLeft="@dimen/num_margin_horizontal"
-    android:paddingStart="@dimen/num_margin_horizontal"
-    android:paddingRight="34dp"
     android:paddingEnd="34dp"
+    android:paddingLeft="@dimen/num_margin_horizontal"
+    android:paddingRight="34dp"
+    android:paddingStart="@dimen/num_margin_horizontal"
     android:paddingTop="@dimen/num_margin_vertical">
 
-    <Switch
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/degree_mode" />
+
+    <android.support.v7.widget.SwitchCompat
         android:id="@+id/sw_radian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,6 +24,18 @@
         android:text="@string/radians"
         android:textOff="@string/degrees"
         android:textOn="@string/radians" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/floating_opacity" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek_opacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="90"
+        android:progress="90" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycle_view_color"

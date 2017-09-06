@@ -109,4 +109,6 @@
     <string name="desc_eq">equals</string>
     <string name="qs_title">Calcualtor</string>
     <string name="clear">CLR</string>
+    <string name="degree_mode">Degree mode</string>
+    <string name="floating_opacity">Floating opacity</string>
 </resources>

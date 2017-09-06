@@ -24,6 +24,7 @@ import android.widget.ViewSwitcher;
 
 import com.duy.calculator.CalculatorExpressionEvaluator;
 import com.duy.calculator.CalculatorExpressionTokenizer;
+import com.duy.calculator.CalculatorSettings;
 import com.duy.calculator.Clipboard;
 import com.duy.calculator.R;
 import com.duy.calculator.view.BackspaceImageButton;
@@ -80,15 +81,21 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
     protected void setAccentColor() {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
         int defaultColor = ContextCompat.getColor(getContext(), R.color.calculator_accent_color);
-        int color = pref.getInt(ColorAdapter.PREF_KEY_COLOR_ACCENT, defaultColor);
-
+        int color = pref.getInt(CalculatorSettings.PREF_KEY_COLOR_ACCENT, defaultColor);
+        float opacity = CalculatorSettings.getOpacity(getContext()) / 100f;
         if (mInactiveButton != null) {
             FloatingActionButton fab = mInactiveButton.findViewById(R.id.fab);
-            if (fab != null) fab.setBackgroundTintList(ColorStateList.valueOf(color));
+            if (fab != null) {
+                fab.setBackgroundTintList(ColorStateList.valueOf(color));
+                fab.setAlpha(opacity);
+            }
         }
         if (mDraggableIcon != null) {
             FloatingActionButton fab = mDraggableIcon.findViewById(R.id.fab);
-            if (fab != null) fab.setBackgroundTintList(ColorStateList.valueOf(color));
+            if (fab != null) {
+                fab.setBackgroundTintList(ColorStateList.valueOf(color));
+                fab.setAlpha(opacity);
+            }
         }
         if (mFloatingPageAdapter != null) {
             View padAdvance = mFloatingPageAdapter.getViewAt(3);
@@ -363,7 +370,7 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (key.equals(ColorAdapter.PREF_KEY_COLOR_ACCENT)) {
+        if (key.equals(CalculatorSettings.PREF_KEY_COLOR_ACCENT)) {
             setAccentColor();
         }
     }
