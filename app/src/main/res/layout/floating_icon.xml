@@ -3,7 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-
     <android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fab"
@@ -11,8 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:src="@drawable/ic_equal_black"
-        app:backgroundTint="@color/pad_advanced_background_color"
+        android:tint="#424242"
+        app:backgroundTint="@color/calculator_accent_color"
         app:fabSize="normal" />
-
 
 </FrameLayout>

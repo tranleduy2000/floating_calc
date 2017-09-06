@@ -57,7 +57,7 @@ public class CalculatorEditText extends FormattedNumberEditText {
     }
 
     private void setUp(Context context, AttributeSet attrs) {
-        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/RobotoMono-Light.ttf"));
+        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Light.ttf"));
     }
 
     @Override

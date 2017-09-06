@@ -55,7 +55,7 @@ class FloatingHistoryAdapter extends RecyclerView.Adapter<FloatingHistoryAdapter
     }
 
     protected int getLayoutResourceId() {
-        return R.layout.floating_history_entry;
+        return R.layout.list_item_history;
     }
 
     @Override

@@ -100,7 +100,7 @@ public class FloatingPageAdapter extends PagerAdapter {
                 setUpPref(mViews[position]);
                 break;
             case 1:
-                mViews[position] = View.inflate(mContext, R.layout.floating_calculator_history, null);
+                mViews[position] = View.inflate(mContext, R.layout.floating_history, null);
                 RecyclerView historyView = mViews[position].findViewById(R.id.history);
                 setUpHistory(historyView);
 
@@ -108,14 +108,14 @@ public class FloatingPageAdapter extends PagerAdapter {
                 setEnabled(mViews[position], false);
                 break;
             case 2:
-                mViews[position] = View.inflate(mContext, R.layout.floating_calculator_basic, null);
+                mViews[position] = View.inflate(mContext, R.layout.pad_basic, null);
 
                 Button dot = mViews[position].findViewById(R.id.dec_point);
                 dot.setText(String.valueOf(Constants.DECIMAL_POINT));
 
                 break;
             case 3:
-                mViews[position] = View.inflate(mContext, R.layout.floating_calculator_advanced, null);
+                mViews[position] = View.inflate(mContext, R.layout.pad_advanced, null);
 
                 // This is the first time loading the advanced panel -- disable it until the user moves to it
                 setEnabled(mViews[position], false);

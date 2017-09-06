@@ -74,7 +74,7 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
     @Override
     public View inflateButton(@NonNull ViewGroup parent) {
         Log.d(TAG, "inflateButton() called with: parent = [" + parent + "]");
-        return LayoutInflater.from(getContext()).inflate(R.layout.floating_calculator_icon, parent, false);
+        return LayoutInflater.from(getContext()).inflate(R.layout.floating_icon, parent, false);
     }
 
     protected void setAccentColor() {
