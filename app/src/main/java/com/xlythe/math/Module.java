@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 /**
  * A super class for BaseModule, GraphModule, MatrixModule

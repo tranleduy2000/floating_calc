@@ -19,9 +19,9 @@ import com.duy.calculator.CalculatorSettings;
 import com.duy.calculator.R;
 import com.duy.calculator.view.SolidLayout;
 import com.duy.calculator.view.SolidPadLayout;
-import com.duy.math.Constants;
-import com.duy.math.History;
-import com.duy.math.Solver;
+import com.xlythe.math.Constants;
+import com.xlythe.math.History;
+import com.xlythe.math.Solver;
 
 public class FloatingPageAdapter extends PagerAdapter {
     private static final int COUNT = 4;

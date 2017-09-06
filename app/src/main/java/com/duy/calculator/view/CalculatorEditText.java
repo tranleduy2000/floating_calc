@@ -31,7 +31,7 @@ import android.view.MotionEvent;
 import android.widget.TextView;
 
 import com.duy.calculator.util.TextUtil;
-import com.duy.math.BaseModule;
+import com.xlythe.math.BaseModule;
 
 import java.util.Arrays;
 import java.util.Comparator;

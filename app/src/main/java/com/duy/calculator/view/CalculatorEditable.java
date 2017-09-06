@@ -19,8 +19,8 @@ package com.duy.calculator.view;
 import android.text.Editable;
 import android.text.SpannableStringBuilder;
 
-import com.duy.math.Constants;
-import com.duy.math.Solver;
+import com.xlythe.math.Constants;
+import com.xlythe.math.Solver;
 
 public class CalculatorEditable extends SpannableStringBuilder {
     private static final char[] ORIGINALS = {'-', '*', '/'};

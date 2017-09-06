@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 import android.content.Context;
 import android.util.Log;

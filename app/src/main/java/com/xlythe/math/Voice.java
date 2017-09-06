@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 import java.util.LinkedList;
 import java.util.List;

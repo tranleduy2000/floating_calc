@@ -2,9 +2,9 @@ package com.duy.calculator.util;
 
 import android.widget.TextView;
 
-import com.duy.math.Constants;
-import com.duy.math.EquationFormatter;
-import com.duy.math.Solver;
+import com.xlythe.math.Constants;
+import com.xlythe.math.EquationFormatter;
+import com.xlythe.math.Solver;
 
 /**
  * For formatting text in the display

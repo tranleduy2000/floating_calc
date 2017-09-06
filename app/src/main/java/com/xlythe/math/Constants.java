@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 import java.text.DecimalFormatSymbols;
 import java.util.regex.Pattern;

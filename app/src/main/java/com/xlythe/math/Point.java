@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 /**
  * Represents a point on a graph

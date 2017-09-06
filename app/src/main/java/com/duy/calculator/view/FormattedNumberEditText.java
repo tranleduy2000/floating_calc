@@ -24,10 +24,10 @@ import android.util.AttributeSet;
 
 import com.duy.calculator.R;
 import com.duy.calculator.util.TextUtil;
-import com.duy.math.BaseModule;
-import com.duy.math.Constants;
-import com.duy.math.EquationFormatter;
-import com.duy.math.Solver;
+import com.xlythe.math.BaseModule;
+import com.xlythe.math.Constants;
+import com.xlythe.math.EquationFormatter;
+import com.xlythe.math.Solver;
 
 import java.util.Arrays;
 import java.util.HashSet;

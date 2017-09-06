@@ -15,8 +15,8 @@
 */
 package com.duy.calculator;
 
-import com.duy.math.Base;
-import com.duy.math.Solver;
+import com.xlythe.math.Base;
+import com.xlythe.math.Solver;
 
 import org.javia.arity.SyntaxException;
 

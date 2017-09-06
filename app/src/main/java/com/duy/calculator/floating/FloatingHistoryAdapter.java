@@ -25,11 +25,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.duy.calculator.R;
-import com.duy.math.Constants;
-import com.duy.math.EquationFormatter;
-import com.duy.math.History;
-import com.duy.math.HistoryEntry;
-import com.duy.math.Solver;
+import com.xlythe.math.Constants;
+import com.xlythe.math.EquationFormatter;
+import com.xlythe.math.History;
+import com.xlythe.math.HistoryEntry;
+import com.xlythe.math.Solver;
 
 import java.util.List;
 

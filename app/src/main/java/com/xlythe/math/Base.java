@@ -1,4 +1,4 @@
-package com.duy.math;
+package com.xlythe.math;
 
 /**
  * Represents changing the number of characters available when writing numbers.

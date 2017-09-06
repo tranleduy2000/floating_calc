@@ -29,12 +29,12 @@ import com.duy.calculator.R;
 import com.duy.calculator.view.BackspaceImageButton;
 import com.duy.calculator.view.CalculatorEditText;
 import com.duy.calculator.view.floating.FloatingView;
-import com.duy.math.Constants;
-import com.duy.math.EquationFormatter;
-import com.duy.math.History;
-import com.duy.math.HistoryEntry;
-import com.duy.math.Persist;
-import com.duy.math.Solver;
+import com.xlythe.math.Constants;
+import com.xlythe.math.EquationFormatter;
+import com.xlythe.math.History;
+import com.xlythe.math.HistoryEntry;
+import com.xlythe.math.Persist;
+import com.xlythe.math.Solver;
 
 import static com.duy.calculator.CalculatorExpressionEvaluator.INVALID_RES_ID;
 

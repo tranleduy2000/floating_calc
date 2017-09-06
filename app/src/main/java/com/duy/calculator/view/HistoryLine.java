@@ -14,8 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.duy.calculator.R;
-import com.duy.math.History;
-import com.duy.math.HistoryEntry;
+import com.xlythe.math.History;
+import com.xlythe.math.HistoryEntry;
 
 public class HistoryLine extends LinearLayout {
     private static final int COPY = 0;

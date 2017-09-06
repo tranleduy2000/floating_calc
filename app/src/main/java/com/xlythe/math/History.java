@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.duy.math;
+package com.xlythe.math;
 
 import java.io.DataInput;
 import java.io.DataOutput;
