@@ -26,7 +26,7 @@ public class ViewAnimationUtils {
      * <p>
      * Only a single non-rectangular clip can be applied on a View at any time.
      * Views clipped by a circular reveal animation take priority over
-     * {@link android.view.View#setClipToOutline(boolean) View Outline clipping}.
+     * {@link View#setClipToOutline(boolean) View Outline clipping}.
      * <p>
      * Note that the animation returned here is a one-shot animation. It cannot
      * be re-used, and once started it cannot be paused or resumed.
