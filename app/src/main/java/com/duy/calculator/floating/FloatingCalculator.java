@@ -14,7 +14,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -74,7 +73,6 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
     @NonNull
     @Override
     public View inflateButton(@NonNull ViewGroup parent) {
-        Log.d(TAG, "inflateButton() called with: parent = [" + parent + "]");
         return LayoutInflater.from(getContext()).inflate(R.layout.floating_icon, parent, false);
     }
 

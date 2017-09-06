@@ -18,6 +18,7 @@ import android.widget.SeekBar;
 
 import com.duy.calculator.CalculatorSettings;
 import com.duy.calculator.R;
+import com.duy.calculator.util.StoreUtil;
 import com.duy.calculator.view.SolidLayout;
 import com.duy.calculator.view.SolidPadLayout;
 import com.xlythe.math.Constants;
@@ -142,6 +143,7 @@ public class FloatingPageAdapter extends PagerAdapter {
         mRadian.setChecked(CalculatorSettings.useRadians(mContext));
 
         SeekBar opacity = v.findViewById(R.id.seek_opacity);
+        opacity.setProgress(CalculatorSettings.getOpacity(mContext));
         opacity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -156,6 +158,25 @@ public class FloatingPageAdapter extends PagerAdapter {
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
+            }
+        });
+
+        v.findViewById(R.id.img_share).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StoreUtil.shareThisApp(mContext);
+            }
+        });
+        v.findViewById(R.id.img_more).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StoreUtil.moreApp(mContext);
+            }
+        });
+        v.findViewById(R.id.img_rate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StoreUtil.rateThisApp(mContext);
             }
         });
     }
