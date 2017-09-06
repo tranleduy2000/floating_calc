@@ -370,7 +370,8 @@ public class FloatingCalculator extends FloatingView implements SharedPreference
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (key.equals(CalculatorSettings.PREF_KEY_COLOR_ACCENT)) {
+        if (key.equals(CalculatorSettings.PREF_KEY_COLOR_ACCENT)
+                || key.equals(CalculatorSettings.PREF_KEY_OPACITY)) {
             setAccentColor();
         }
     }

@@ -1,46 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/num_margin_vertical"
-    android:paddingEnd="34dp"
-    android:paddingLeft="@dimen/num_margin_horizontal"
-    android:paddingRight="34dp"
-    android:paddingStart="@dimen/num_margin_horizontal"
-    android:paddingTop="@dimen/num_margin_vertical">
+    android:descendantFocusability="blocksDescendants">
 
-    <android.support.v7.widget.AppCompatTextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/degree_mode" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/num_margin_vertical"
+        android:paddingEnd="34dp"
+        android:paddingLeft="@dimen/num_margin_horizontal"
+        android:paddingRight="34dp"
+        android:paddingStart="@dimen/num_margin_horizontal"
+        android:paddingTop="@dimen/num_margin_vertical">
 
-    <android.support.v7.widget.SwitchCompat
-        android:id="@+id/sw_radian"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="@string/radians"
-        android:textOff="@string/degrees"
-        android:textOn="@string/radians" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/degree_mode" />
 
-    <android.support.v7.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/floating_opacity" />
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sw_radian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radians"
+            android:textOff="@string/degrees"
+            android:textOn="@string/radians" />
 
-    <android.support.v7.widget.AppCompatSeekBar
-        android:id="@+id/seek_opacity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="90"
-        android:progress="90" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle_view_color"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/floating_opacity" />
 
-    </android.support.v7.widget.RecyclerView>
-</LinearLayout>
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek_opacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="80"
+            android:progress="80" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

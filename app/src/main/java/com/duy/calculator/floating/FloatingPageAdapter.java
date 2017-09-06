@@ -145,7 +145,7 @@ public class FloatingPageAdapter extends PagerAdapter {
         opacity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                CalculatorSettings.setOpacity(mContext, i + 10);
+                CalculatorSettings.setOpacity(mContext, i + 20);
             }
 
             @Override
