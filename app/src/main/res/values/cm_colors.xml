@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Display -->
+
+    <!-- History -->
+
+    <!-- Keyboard -->
+    <color name="pad_advanced_text_color_normal">#91000000</color>
+    <color name="pad_advanced_text_color_disabled">#33000000</color>
+    <color name="pad_text_color_disabled">#33FFFFFF</color>
+    <color name="pad_text_color_normal">#ffffff</color>
+    <color name="widget_text_color">#ffffff</color>
+
+    <!-- Graph colors -->
+</resources>

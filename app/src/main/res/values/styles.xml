@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (C) 2014 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/calculator_accent_color</item>
+        <item name="colorAccent">@color/pad_numeric_background_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Calculator" />
+
+    <!-- The base features for the display -->
+    <style name="Theme.Calculator.Display" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textSize">@dimen/display_text_size</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Calculator.Display.Main" />
+
+    <style name="Theme.Calculator.Display.Main.Formula">
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:paddingTop">16dip</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Theme.Calculator.Display.Main.Result">
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Theme.Calculator.Display.Widget">
+        <item name="android:textColor">@color/widget_text_color</item>
+        <item name="android:inputType">text|textNoSuggestions</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="Theme.Calculator.Display.FloatingCalc">
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="Theme.Calculator.ButtonStyle" parent="">
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="Theme.Calculator.ButtonStyle.Digit"></style>
+
+    <style name="Theme.Calculator.ButtonStyle.Widget">
+        <item name="android:textColor">@color/widget_text_color</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="PadButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/pad_button_text_color</item>
+    </style>
+
+    <style name="TransparentBackground">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="PadLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="PadButtonStyle.FloatingCalc">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="PadButtonStyle.FloatingCalc.Advanced">
+        <item name="android:textColor">@color/pad_button_advanced_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+
+    <style name="PadButtonStyle.Advanced">
+        <item name="android:textColor">@color/pad_button_advanced_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+
+    <style name="PadButtonStyle.Advanced.Toggle">
+        <item name="android:textColor">@color/pad_button_toggle_text_color</item>
+    </style>
+
+    <style name="PadButtonStyle.Numeric">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="PadButtonStyle.Numeric.Equals">
+        <item name="android:visibility">visible</item>
+        <item name="android:tint">@color/pad_text_color_normal</item>
+    </style>
+
+    <style name="PadButtonStyle.Operator">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="PadButtonStyle.Operator.Equals">
+        <item name="android:tint">@color/pad_text_color_normal</item>
+    </style>
+
+    <style name="PadButtonStyle.Operator.Text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="PadLayoutStyle.Aux" />
+
+    <style name="PadLayoutStyle.Advanced">
+        <item name="android:columnCount">4</item>
+        <item name="android:rowCount">4</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+    </style>
+
+    <style name="PadLayoutStyle.Hex" parent="@style/PadLayoutStyle.Advanced">
+        <item name="android:columnCount">3</item>
+        <item name="android:rowCount">3</item>
+    </style>
+
+    <style name="PadLayoutStyle.Matrix" parent="@style/PadLayoutStyle.Advanced">
+        <item name="android:columnCount">2</item>
+        <item name="android:rowCount">4</item>
+    </style>
+
+    <style name="PadLayoutStyle.Numeric">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">264</item>
+    </style>
+
+    <style name="PadLayoutStyle.Operator">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">96</item>
+        <item name="android:paddingRight">20dip</item>
+    </style>
+
+    <style name="PadLayoutStyle.Card">
+        <item name="android:background">@drawable/color_card</item>
+    </style>
+
+</resources>

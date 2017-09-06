@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.duy.calculator.view.SolidPadLayout
+        style="@style/PadLayoutStyle.Numeric"
+        android:layout_weight="3"
+        android:background="@color/pad_numeric_background_color"
+        android:columnCount="3"
+        android:paddingBottom="@dimen/num_margin_vertical"
+        android:paddingLeft="@dimen/num_margin_horizontal"
+        android:paddingRight="@dimen/num_margin_horizontal"
+        android:paddingTop="@dimen/num_margin_vertical"
+        android:rowCount="4">
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_7"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit7" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_8"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit8" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_9"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit9" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_4"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit4" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_5"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit5" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_6"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit6" />
+
+        <com.duy.calculator.view.CalculatorButton
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit1" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_2"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit2" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/digit_3"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit3" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/dec_point"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/dec_point" />
+
+        <com.duy.calculator.view.CalculatorButton
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:onClick="onButtonClick"
+            android:text="@string/digit0" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/eq"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:contentDescription="@string/desc_eq"
+            android:onClick="onButtonClick"
+            android:text="@string/eq" />
+
+    </com.duy.calculator.view.SolidPadLayout>
+
+    <com.duy.calculator.view.SolidPadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pad_operator"
+        style="@style/PadLayoutStyle.Operator"
+        android:layout_weight="1"
+        android:background="@color/pad_operator_background_color"
+        android:columnCount="1"
+        android:paddingRight="20dip"
+        android:rowCount="4">
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/op_div"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:contentDescription="@string/desc_op_div"
+            android:onClick="onButtonClick"
+            android:text="@string/op_div" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/op_mul"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:contentDescription="@string/desc_op_mul"
+            android:onClick="onButtonClick"
+            android:text="@string/op_mul" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/op_sub"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:contentDescription="@string/desc_op_sub"
+            android:onClick="onButtonClick"
+            android:text="@string/op_sub" />
+
+        <com.duy.calculator.view.CalculatorButton
+            android:id="@+id/op_add"
+            style="@style/PadButtonStyle.FloatingCalc"
+            android:contentDescription="@string/desc_op_add"
+            android:onClick="onButtonClick"
+            android:text="@string/op_add" />
+
+    </com.duy.calculator.view.SolidPadLayout>
+
+</LinearLayout>

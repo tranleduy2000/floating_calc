@@ -1,0 +1,32 @@
+<com.duy.calculator.view.HistoryLine xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/historyExpr"
+        style="@style/Theme.Calculator.ButtonStyle.FloatingCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/historyResult"
+        style="@style/Theme.Calculator.ButtonStyle.FloatingCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</com.duy.calculator.view.HistoryLine>

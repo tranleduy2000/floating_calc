@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- History -->
+
+    <!-- Display -->
+
+    <!-- Floating Calc -->
+    <dimen name="floating_display_height">59dp</dimen>
+    <dimen name="floating_display_height_with_shadow">65dp</dimen>
+    <dimen name="floating_height">280dp</dimen>
+    <dimen name="floating_width">280dp</dimen>
+
+    <!-- Number pad -->
+    <dimen name="num_margin_horizontal">14dp</dimen>
+    <dimen name="num_margin_vertical">10dp</dimen>
+    <dimen name="shadow_margin">5dp</dimen>
+</resources>

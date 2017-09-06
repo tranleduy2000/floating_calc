@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true">
+
+    <com.duy.calculator.view.CalculatorPadViewPager
+        android:id="@+id/panelswitch"
+        android:layout_width="@dimen/floating_width"
+        android:layout_height="@dimen/floating_height"
+        android:layout_marginTop="@dimen/floating_display_height" />
+
+    <LinearLayout
+        android:layout_width="@dimen/floating_width"
+        android:layout_height="@dimen/floating_display_height_with_shadow"
+        android:background="@drawable/white_card"
+        android:orientation="horizontal">
+
+        <ViewSwitcher
+            android:id="@+id/display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inAnimation="@anim/floating_slide_in"
+            android:outAnimation="@anim/floating_slide_out"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <com.duy.calculator.view.CalculatorEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:singleLine="true"
+                android:textColor="@color/display_formula_text_color"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="23sp"
+                tools:text="213123" />
+
+            <com.duy.calculator.view.CalculatorEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:singleLine="true"
+                android:textColor="@color/display_formula_text_color"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="23sp" />
+
+        </ViewSwitcher>
+
+        <!-- ?android:attr/selectableItemBackground does not work, so using custom ripple -->
+        <com.duy.calculator.view.BackspaceImageButton
+            android:id="@+id/delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/menu_bg_dark"
+            android:contentDescription="@string/del"
+            android:src="@drawable/backspace_btn"
+            android:tint="@color/display_formula_text_color" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

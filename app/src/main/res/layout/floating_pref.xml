@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/num_margin_vertical"
+    android:paddingLeft="@dimen/num_margin_horizontal"
+    android:paddingStart="@dimen/num_margin_horizontal"
+    android:paddingRight="34dp"
+    android:paddingEnd="34dp"
+    android:paddingTop="@dimen/num_margin_vertical">
+
+    <Switch
+        android:id="@+id/sw_radian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/radians"
+        android:textOff="@string/degrees"
+        android:textOn="@string/radians" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

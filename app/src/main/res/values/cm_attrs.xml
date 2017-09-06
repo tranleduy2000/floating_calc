@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**	 http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources>
+    <declare-styleable name="EqualsImageButton">
+        <attr name="state_equals" format="boolean" />
+        <attr name="state_next" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BackspaceImageButton">
+        <attr name="state_delete" format="boolean" />
+        <attr name="state_clear" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GraphView">
+        <attr name="showGrid" format="boolean" />
+        <attr name="showInlineNumbers" format="boolean" />
+        <attr name="showOutline" format="boolean" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="gridColor" format="color|reference" />
+        <attr name="graphColor" format="color|reference" />
+        <attr name="numberTextColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SolidLayout">
+        <attr name="preventParentTouchEvents" format="boolean" />
+        <attr name="preventChildTouchEvents" format="boolean" />
+    </declare-styleable>
+</resources>

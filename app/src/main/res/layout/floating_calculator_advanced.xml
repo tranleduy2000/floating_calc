@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Copyright (C) 2014 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<com.duy.calculator.view.SolidPadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pad_advanced"
+    style="@style/PadLayoutStyle.Advanced"
+    android:background="@color/pad_advanced_background_color"
+    android:columnCount="4"
+    android:padding="7dp"
+    android:rowCount="4">
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/btn_sin"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_fun_sin"
+        android:onClick="onButtonClick"
+        android:tag="@string/fun_arcsin"
+        android:text="@string/fun_sin" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/btn_cos"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_fun_cos"
+        android:onClick="onButtonClick"
+        android:tag="@string/fun_arccos"
+        android:text="@string/fun_cos" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/btn_tan"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_fun_tan"
+        android:onClick="onButtonClick"
+        android:tag="@string/fun_arctan"
+        android:text="@string/fun_tan" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/const_imaginary" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/fun_ln"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_fun_ln"
+        android:onClick="onButtonClick"
+        android:text="@string/fun_ln" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/fun_log"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_fun_log"
+        android:onClick="onButtonClick"
+        android:text="@string/fun_log" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_const_pi"
+        android:onClick="onButtonClick"
+        android:text="@string/const_pi" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_const_e"
+        android:onClick="onButtonClick"
+        android:text="@string/const_e" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/fun_percentage"
+        android:onClick="onButtonClick"
+        android:text="@string/fun_percentage" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/op_fact"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_op_fact"
+        android:onClick="onButtonClick"
+        android:text="@string/op_fact" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_op_sqrt"
+        android:onClick="onButtonClick"
+        android:text="@string/op_sqrt" />
+
+    <com.duy.calculator.view.CalculatorButton
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_op_cbrt"
+        android:onClick="onButtonClick"
+        android:text="@string/op_cbrt" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/op_pow"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_op_pow"
+        android:onClick="onButtonClick"
+        android:text="@string/op_pow" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/lparen"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_lparen"
+        android:onClick="onButtonClick"
+        android:text="@string/leftParen" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/rparen"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_rparen"
+        android:onClick="onButtonClick"
+        android:text="@string/rightParen" />
+
+    <com.duy.calculator.view.CalculatorButton
+        android:id="@+id/parentheses"
+        style="@style/PadButtonStyle.FloatingCalc.Advanced"
+        android:contentDescription="@string/desc_parentheses"
+        android:onClick="onButtonClick"
+        android:text="@string/parentheses" />
+
+</com.duy.calculator.view.SolidPadLayout>
