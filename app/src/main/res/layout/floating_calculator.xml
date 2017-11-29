@@ -37,10 +37,10 @@
                 android:singleLine="true"
                 android:textColor="@color/display_formula_text_color"
                 android:textCursorDrawable="@drawable/cursor"
-                android:textSize="23sp"
-                tools:text="213123" />
+                android:textSize="23sp" />
 
             <com.duy.calculator.view.CalculatorEditText
+                android:id="@+id/calculatorEditText"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
@@ -48,7 +48,8 @@
                 android:singleLine="true"
                 android:textColor="@color/display_formula_text_color"
                 android:textCursorDrawable="@drawable/cursor"
-                android:textSize="23sp" />
+                android:textSize="23sp"
+                tools:text="213123" />
 
         </ViewSwitcher>
 
